@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Racepreps</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+
+  <iframe src="https://racepreps.de"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
+
+</body>
+</html>
